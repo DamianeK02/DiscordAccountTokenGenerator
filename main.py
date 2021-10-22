@@ -41,13 +41,16 @@ def get_random_password(length):
 
 
 def get_date():
-    driver.find_element_by_xpath("//span[text()='Dzień']").click()
+    # driver.find_element_by_xpath("//span[text()='Dzień']").click()
+    driver.find_element_by_xpath(".//div[@class='select-2TCrqx inputDay-18OXiE']").click()
     driver.find_element_by_id("react-select-2-option-0").click()
 
-    driver.find_element_by_xpath(".//span[text()='Miesiąc']").click()
+    # driver.find_element_by_xpath(".//span[text()='Miesiąc']").click()
+    driver.find_element_by_xpath(".//div[@class='select-2TCrqx inputMonth-IGgn-0']").click()
     driver.find_element_by_id("react-select-3-option-0").click()
     
-    driver.find_element_by_xpath(".//span[text()='Rok']").click()
+    # driver.find_element_by_xpath(".//span[text()='Rok']").click()
+    driver.find_element_by_xpath(".//div[@class='select-2TCrqx inputYear-2J502p']").click()
     driver.find_element_by_id("react-select-4-option-17").click()
 
 
