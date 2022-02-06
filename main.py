@@ -83,7 +83,7 @@ option.add_argument("user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac
 
 
 
-driver = webdriver.Chrome(chrome_options=option, executable_path=r"externals/chromedriver.exe")
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://discord.com/register')
 
 get_random_email(8)
