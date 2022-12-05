@@ -32,12 +32,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 file = open("users.txt", "a")
 file1 = open("tokens.txt", "a")
 
-# added little snippet to make sure the solver exists.
-if path.exists('solver.crx'):
-    pass
-else:
-    print(f'{Back.RED}  ERROR!  {Back.RESET} Solver Extension Not Downloaded! Download at: {Fore.LIGHTGREEN_EX}https://drive.google.com/file/d/1EFnjfkfzkDXshRSG9KdjIARwoH0J-EpW/view?usp=sharing{Fore.RESET} , then put in this directory!')
-    quit()
+
 
 
 def start():
